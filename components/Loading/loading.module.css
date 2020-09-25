@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.loading {
+  border: 0.6rem solid rgba(0, 0, 0, 0.1);
+  border-radius: 5rem;
+  border-left-color: #22a6b3;
+  height: 5rem;
+  width: 5rem;
+  animation: load 1s linear infinite;
+}
+
+@keyframes load {
+  to {
+    transform: rotate(360deg);
+  }
+}

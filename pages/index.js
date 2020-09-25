@@ -4,11 +4,13 @@ import Link from 'next/link';
 import useSWR from 'swr';
 
 import PageTitle from '../components/PageTitle.js';
+import Loading from '../components/Loading';
 
 const fetcher = (...args) => fetch(...args).then((res) => res.json());
 
 const Index = () => {
   const { data, error } = useSWR('/api/get-promo', fetcher);
+
   return (
     <div>
       <PageTitle title="Home" />
@@ -23,7 +25,7 @@ const Index = () => {
           </a>
         </Link>
       </div>
-      {!data && <p>Loading...</p>}
+      {!data && <Loading />}
       {!error && data && data.showCoupon && (
         <p className="my-12 text-center">{data.message}</p>
       )}
