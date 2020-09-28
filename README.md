@@ -13,4 +13,4 @@ Você precisa do NodeJS e do NPM instalado em sua máquina.
 
 * **Rafael Sana Montevechio** - [LinkedIn](https://www.linkedin.com/in/rafaelsanamontevechio)
 
-* Projetto desenvolvido durante as aulas do Full Stack Master - [Dev Pleno](https://devpleno.com)
+* Projeto desenvolvido durante as aulas do Full Stack Master - [Dev Pleno](https://devpleno.com)
